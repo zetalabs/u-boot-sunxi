@@ -16,7 +16,12 @@
 #define CONFIG_CLK_FULL_SPEED		912000000
 
 #define CONFIG_SYS_PROMPT		"sun7i# "
+/* FIXME: to match android linux-3.4 */
+#if 0
 #define CONFIG_MACH_TYPE		4283
+#else
+#define CONFIG_MACH_TYPE		3893
+#endif
 
 #if defined(CONFIG_SYS_SECONDARY_ON)
 #define CONFIG_BOARD_POSTCLK_INIT 1
